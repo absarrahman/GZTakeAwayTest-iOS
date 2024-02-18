@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		5B9727622B81F7D500BBD27F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727612B81F7D500BBD27F /* AppDelegate.swift */; };
 		5B9727642B81F7D500BBD27F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727632B81F7D500BBD27F /* SceneDelegate.swift */; };
-		5B9727662B81F7D500BBD27F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727652B81F7D500BBD27F /* ViewController.swift */; };
+		5B9727662B81F7D500BBD27F /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727652B81F7D500BBD27F /* ContactListViewController.swift */; };
 		5B9727692B81F7D500BBD27F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9727672B81F7D500BBD27F /* Main.storyboard */; };
 		5B97276B2B81F7D600BBD27F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B97276A2B81F7D600BBD27F /* Assets.xcassets */; };
 		5B97276E2B81F7D600BBD27F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B97276C2B81F7D600BBD27F /* LaunchScreen.storyboard */; };
 		5B9727792B81F7D600BBD27F /* GZTakeAwayTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727782B81F7D600BBD27F /* GZTakeAwayTestTests.swift */; };
 		5B9727832B81F7D600BBD27F /* GZTakeAwayTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727822B81F7D600BBD27F /* GZTakeAwayTestUITests.swift */; };
 		5B9727852B81F7D600BBD27F /* GZTakeAwayTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727842B81F7D600BBD27F /* GZTakeAwayTestUITestsLaunchTests.swift */; };
+		5B9727982B82048000BBD27F /* SearchFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B9727972B82048000BBD27F /* SearchFieldView.xib */; };
+		5B97279A2B82048E00BBD27F /* SearchFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727992B82048E00BBD27F /* SearchFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		5B97275E2B81F7D500BBD27F /* GZTakeAwayTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GZTakeAwayTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9727612B81F7D500BBD27F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B9727632B81F7D500BBD27F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5B9727652B81F7D500BBD27F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B9727652B81F7D500BBD27F /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		5B9727682B81F7D500BBD27F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B97276A2B81F7D600BBD27F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B97276D2B81F7D600BBD27F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		5B97277E2B81F7D600BBD27F /* GZTakeAwayTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GZTakeAwayTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9727822B81F7D600BBD27F /* GZTakeAwayTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GZTakeAwayTestUITests.swift; sourceTree = "<group>"; };
 		5B9727842B81F7D600BBD27F /* GZTakeAwayTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GZTakeAwayTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5B9727972B82048000BBD27F /* SearchFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchFieldView.xib; sourceTree = "<group>"; };
+		5B9727992B82048E00BBD27F /* SearchFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +105,12 @@
 			children = (
 				5B9727612B81F7D500BBD27F /* AppDelegate.swift */,
 				5B9727632B81F7D500BBD27F /* SceneDelegate.swift */,
-				5B9727652B81F7D500BBD27F /* ViewController.swift */,
+				5B9727652B81F7D500BBD27F /* ContactListViewController.swift */,
 				5B9727672B81F7D500BBD27F /* Main.storyboard */,
 				5B97276A2B81F7D600BBD27F /* Assets.xcassets */,
 				5B97276C2B81F7D600BBD27F /* LaunchScreen.storyboard */,
 				5B97276F2B81F7D600BBD27F /* Info.plist */,
+				5B97279B2B82049200BBD27F /* SearchFieldView */,
 			);
 			path = GZTakeAwayTest;
 			sourceTree = "<group>";
@@ -125,6 +130,15 @@
 				5B9727842B81F7D600BBD27F /* GZTakeAwayTestUITestsLaunchTests.swift */,
 			);
 			path = GZTakeAwayTestUITests;
+			sourceTree = "<group>";
+		};
+		5B97279B2B82049200BBD27F /* SearchFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				5B9727972B82048000BBD27F /* SearchFieldView.xib */,
+				5B9727992B82048E00BBD27F /* SearchFieldView.swift */,
+			);
+			path = SearchFieldView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B97276E2B81F7D600BBD27F /* LaunchScreen.storyboard in Resources */,
+				5B9727982B82048000BBD27F /* SearchFieldView.xib in Resources */,
 				5B97276B2B81F7D600BBD27F /* Assets.xcassets in Resources */,
 				5B9727692B81F7D500BBD27F /* Main.storyboard in Resources */,
 			);
@@ -258,7 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B9727662B81F7D500BBD27F /* ViewController.swift in Sources */,
+				5B9727662B81F7D500BBD27F /* ContactListViewController.swift in Sources */,
+				5B97279A2B82048E00BBD27F /* SearchFieldView.swift in Sources */,
 				5B9727622B81F7D500BBD27F /* AppDelegate.swift in Sources */,
 				5B9727642B81F7D500BBD27F /* SceneDelegate.swift in Sources */,
 			);
@@ -450,6 +466,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,6 +495,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

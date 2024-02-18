@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchFieldView" customModule="GZTakeAwayTest" customModuleProvider="target">
+            <connections>
+                <outlet property="textfield" destination="Qs4-dy-jGR" id="exX-ZB-lyP"/>
+                <outlet property="view" destination="iN0-l3-epB" id="8Ot-Od-t2e"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="575" height="148"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ez2-ZP-CFu">
+                    <rect key="frame" x="12" y="10.999999999999993" width="128" height="126.33333333333331"/>
+                    <color key="tintColor" name="TextDart"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Ez2-ZP-CFu" secondAttribute="height" multiplier="1:1" id="uDD-FN-fRv"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qs4-dy-jGR">
+                    <rect key="frame" x="148" y="10" width="415" height="128"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="SecondaryBackground"/>
+            <constraints>
+                <constraint firstItem="Qs4-dy-jGR" firstAttribute="top" secondItem="Ez2-ZP-CFu" secondAttribute="top" id="0qS-yG-36k"/>
+                <constraint firstItem="Ez2-ZP-CFu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="5gs-yk-kgc"/>
+                <constraint firstItem="Qs4-dy-jGR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Rgp-L5-ZLz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Qs4-dy-jGR" secondAttribute="trailing" constant="12" id="Tgb-uD-44s"/>
+                <constraint firstItem="Ez2-ZP-CFu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="i0s-o1-JxM"/>
+                <constraint firstItem="Qs4-dy-jGR" firstAttribute="leading" secondItem="Ez2-ZP-CFu" secondAttribute="trailing" constant="8" id="mWC-Uh-0Dj"/>
+                <constraint firstItem="Ez2-ZP-CFu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zXv-cj-aZI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="257.25190839694653" y="-263.38028169014086"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <namedColor name="SecondaryBackground">
+            <color red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextDart">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
