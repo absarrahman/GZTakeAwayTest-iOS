@@ -20,6 +20,13 @@
 		5B97279A2B82048E00BBD27F /* SearchFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727992B82048E00BBD27F /* SearchFieldView.swift */; };
 		5BF329EF2B820FBC00BAE58A /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF329ED2B820FBC00BAE58A /* ContactTableViewCell.swift */; };
 		5BF329F02B820FBC00BAE58A /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF329EE2B820FBC00BAE58A /* ContactTableViewCell.xib */; };
+		5BF329F32B8233E100BAE58A /* ContactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF329F22B8233E100BAE58A /* ContactListViewModel.swift */; };
+		5BF329F72B823B4100BAE58A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5BF329F62B823B4100BAE58A /* Alamofire */; };
+		5BF329F92B823ECC00BAE58A /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF329F82B823ECC00BAE58A /* ContactsModel.swift */; };
+		5BF329FB2B82591900BAE58A /* UIView+Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF329FA2B82591900BAE58A /* UIView+Shimmer.swift */; };
+		5BF32A042B825BD800BAE58A /* ShimmerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF32A022B825BD800BAE58A /* ShimmerTableViewCell.swift */; };
+		5BF32A052B825BD800BAE58A /* ShimmerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF32A032B825BD800BAE58A /* ShimmerTableViewCell.xib */; };
+		5BF32A072B82672B00BAE58A /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF32A062B82672B00BAE58A /* Secret.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +64,12 @@
 		5B9727992B82048E00BBD27F /* SearchFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldView.swift; sourceTree = "<group>"; };
 		5BF329ED2B820FBC00BAE58A /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		5BF329EE2B820FBC00BAE58A /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
+		5BF329F22B8233E100BAE58A /* ContactListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModel.swift; sourceTree = "<group>"; };
+		5BF329F82B823ECC00BAE58A /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
+		5BF329FA2B82591900BAE58A /* UIView+Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmer.swift"; sourceTree = "<group>"; };
+		5BF32A022B825BD800BAE58A /* ShimmerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerTableViewCell.swift; sourceTree = "<group>"; };
+		5BF32A032B825BD800BAE58A /* ShimmerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShimmerTableViewCell.xib; sourceTree = "<group>"; };
+		5BF32A062B82672B00BAE58A /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF329F72B823B4100BAE58A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,13 +123,18 @@
 			children = (
 				5B9727612B81F7D500BBD27F /* AppDelegate.swift */,
 				5B9727632B81F7D500BBD27F /* SceneDelegate.swift */,
-				5B9727652B81F7D500BBD27F /* ContactListViewController.swift */,
+				5BF329F42B8233F300BAE58A /* ContactList */,
 				5B9727672B81F7D500BBD27F /* Main.storyboard */,
 				5B97276A2B81F7D600BBD27F /* Assets.xcassets */,
 				5B97276C2B81F7D600BBD27F /* LaunchScreen.storyboard */,
 				5B97276F2B81F7D600BBD27F /* Info.plist */,
 				5B97279B2B82049200BBD27F /* SearchFieldView */,
 				5BF329F12B820FC900BAE58A /* ContactTableViewCell */,
+				5BF329F82B823ECC00BAE58A /* ContactsModel.swift */,
+				5BF329FA2B82591900BAE58A /* UIView+Shimmer.swift */,
+				5BF32A022B825BD800BAE58A /* ShimmerTableViewCell.swift */,
+				5BF32A032B825BD800BAE58A /* ShimmerTableViewCell.xib */,
+				5BF32A062B82672B00BAE58A /* Secret.swift */,
 			);
 			path = GZTakeAwayTest;
 			sourceTree = "<group>";
@@ -155,6 +174,15 @@
 			path = ContactTableViewCell;
 			sourceTree = "<group>";
 		};
+		5BF329F42B8233F300BAE58A /* ContactList */ = {
+			isa = PBXGroup;
+			children = (
+				5B9727652B81F7D500BBD27F /* ContactListViewController.swift */,
+				5BF329F22B8233E100BAE58A /* ContactListViewModel.swift */,
+			);
+			path = ContactList;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,6 +199,9 @@
 			dependencies = (
 			);
 			name = GZTakeAwayTest;
+			packageProductDependencies = (
+				5BF329F62B823B4100BAE58A /* Alamofire */,
+			);
 			productName = GZTakeAwayTest;
 			productReference = 5B97275E2B81F7D500BBD27F /* GZTakeAwayTest.app */;
 			productType = "com.apple.product-type.application";
@@ -243,6 +274,9 @@
 				Base,
 			);
 			mainGroup = 5B9727552B81F7D500BBD27F;
+			packageReferences = (
+				5BF329F52B823B4100BAE58A /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 5B97275F2B81F7D500BBD27F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B97276E2B81F7D600BBD27F /* LaunchScreen.storyboard in Resources */,
+				5BF32A052B825BD800BAE58A /* ShimmerTableViewCell.xib in Resources */,
 				5B9727982B82048000BBD27F /* SearchFieldView.xib in Resources */,
 				5B97276B2B81F7D600BBD27F /* Assets.xcassets in Resources */,
 				5BF329F02B820FBC00BAE58A /* ContactTableViewCell.xib in Resources */,
@@ -288,11 +323,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF329FB2B82591900BAE58A /* UIView+Shimmer.swift in Sources */,
+				5BF32A072B82672B00BAE58A /* Secret.swift in Sources */,
 				5B9727662B81F7D500BBD27F /* ContactListViewController.swift in Sources */,
 				5BF329EF2B820FBC00BAE58A /* ContactTableViewCell.swift in Sources */,
+				5BF32A042B825BD800BAE58A /* ShimmerTableViewCell.swift in Sources */,
 				5B97279A2B82048E00BBD27F /* SearchFieldView.swift in Sources */,
+				5BF329F32B8233E100BAE58A /* ContactListViewModel.swift in Sources */,
 				5B9727622B81F7D500BBD27F /* AppDelegate.swift in Sources */,
 				5B9727642B81F7D500BBD27F /* SceneDelegate.swift in Sources */,
+				5BF329F92B823ECC00BAE58A /* ContactsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +681,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5BF329F52B823B4100BAE58A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5BF329F62B823B4100BAE58A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5BF329F52B823B4100BAE58A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5B9727562B81F7D500BBD27F /* Project object */;
 }
