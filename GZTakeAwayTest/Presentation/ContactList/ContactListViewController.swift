@@ -23,6 +23,8 @@ class ContactListViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         tableView.dataSource = self
+        tableView.delegate = self
+        
         tableView.register(UINib(nibName: ContactTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: ContactTableViewCell.identifier)
         
         tableView.register(UINib(nibName: ShimmerTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: ShimmerTableViewCell.identifier)
@@ -65,4 +67,16 @@ extension ContactListViewController: UITableViewDataSource {
     }
     
     
+}
+
+extension ContactListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ContactDetailsViewController") as! ContactDetailsViewController
+        
+        let model = viewModel.contactModels[indexPath.row]
+        vc.viewModel = ContactDetailsViewModel(model)
+        present(vc, animated: true)
+    }
 }

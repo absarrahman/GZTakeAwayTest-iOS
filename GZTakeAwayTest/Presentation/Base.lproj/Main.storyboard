@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bJb-WE-Qkv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -62,7 +62,7 @@
         <!--Contact Details View Controller-->
         <scene sceneID="Vh4-s0-WK2">
             <objects>
-                <viewController id="bJb-WE-Qkv" customClass="ContactDetailsViewController" customModule="GZTakeAwayTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContactDetailsViewController" id="bJb-WE-Qkv" customClass="ContactDetailsViewController" customModule="GZTakeAwayTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dNl-Nc-4Rk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -231,6 +231,12 @@
                             <constraint firstItem="0iL-Ob-rSq" firstAttribute="centerX" secondItem="dNl-Nc-4Rk" secondAttribute="centerX" id="jey-Vo-48n"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="nlf-gA-kNX" id="4YZ-wa-6cI"/>
+                        <outlet property="fullNameLabel" destination="dA5-ze-Ueb" id="5sr-6Q-I9b"/>
+                        <outlet property="phoneNumberLabel" destination="Rp6-DQ-Flg" id="lqY-ZC-jkv"/>
+                        <outlet property="userImageView" destination="0iL-Ob-rSq" id="awA-pF-6ga"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="doz-MP-6VH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
