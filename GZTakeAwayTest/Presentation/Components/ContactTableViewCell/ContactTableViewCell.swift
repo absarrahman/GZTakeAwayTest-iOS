@@ -15,10 +15,10 @@ class ContactTableViewCell: UITableViewCell {
     @IBOutlet weak var userImageView: UIImageView!
     
     
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet private weak var nameLabel: UILabel!
     
     
-    @IBOutlet weak var phoneNumberLabel: UILabel!
+    @IBOutlet private weak var phoneNumberLabel: UILabel!
     
     
 
@@ -31,6 +31,11 @@ class ContactTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configure(_ model: ContactModel?) {
+        nameLabel.text = model?.fullName
+        phoneNumberLabel.text = model?.phoneNumber?.formatPhoneNumber
     }
     
 }

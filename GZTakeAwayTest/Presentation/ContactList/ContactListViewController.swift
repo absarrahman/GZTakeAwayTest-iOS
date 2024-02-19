@@ -59,10 +59,7 @@ extension ContactListViewController: UITableViewDataSource {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: ContactTableViewCell.identifier, for: indexPath) as! ContactTableViewCell
             let model = viewModel.contactModels[indexPath.row]
-            // TODO: REFACTOR PLZ
-            cell.nameLabel.text = model.fullName
-            cell.phoneNumberLabel.text = model.phoneNumber
-            
+            cell.configure(model)
             return cell
         }
     }
