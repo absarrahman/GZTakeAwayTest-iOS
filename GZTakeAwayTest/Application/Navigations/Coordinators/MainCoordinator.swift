@@ -39,11 +39,11 @@ class MainCoordinator: NSObject, Coordinator {
         }
     }
     
-    func showAlertError(viewController: UIViewController, error: Error) {
+    func showAlertError(error: Error) {
         guard let error = error as? NetworkManager.NetworkError else { return  }
         
         let alertController = UIAlertController(title: "Something went wrong", message: "\(error.localizedDescription)", preferredStyle: .alert)
-
+        
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
         
@@ -58,7 +58,7 @@ class MainCoordinator: NSObject, Coordinator {
             alertController.addAction(successAction)
         }
         alertController.addAction(cancelAction)
-        viewController.present(alertController, animated: true)
+        navigationController.present(alertController, animated: true)
     }
 }
 

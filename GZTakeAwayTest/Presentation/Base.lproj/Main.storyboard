@@ -111,7 +111,7 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
                                                     <action selector="buttonTapped:" destination="bJb-WE-Qkv" eventType="touchUpInside" id="Qj9-Tq-hGK"/>
                                                 </connections>
@@ -149,7 +149,7 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
                                                     <action selector="buttonTapped:" destination="bJb-WE-Qkv" eventType="touchUpInside" id="pS0-NQ-J5D"/>
                                                 </connections>
@@ -187,7 +187,7 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
                                                     <action selector="buttonTapped:" destination="bJb-WE-Qkv" eventType="touchUpInside" id="bwJ-xP-ufr"/>
                                                 </connections>
@@ -237,6 +237,9 @@
                         <outlet property="fullNameLabel" destination="dA5-ze-Ueb" id="5sr-6Q-I9b"/>
                         <outlet property="phoneNumberLabel" destination="Rp6-DQ-Flg" id="lqY-ZC-jkv"/>
                         <outlet property="userImageView" destination="0iL-Ob-rSq" id="awA-pF-6ga"/>
+                        <outletCollection property="buttons" destination="McE-fC-GSe" collectionClass="NSMutableArray" id="QL3-4x-ouR"/>
+                        <outletCollection property="buttons" destination="E32-Dt-zYs" collectionClass="NSMutableArray" id="HHd-T8-CO7"/>
+                        <outletCollection property="buttons" destination="aIx-dA-hVr" collectionClass="NSMutableArray" id="hvg-69-eYj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="doz-MP-6VH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -13,7 +13,9 @@ class ContactDetailsViewController: UIViewController, MainStoryboarded {
     var viewModel: ContactDetailsViewModel!
     
     var coordinator: ContactDetailsCoordinator?
-
+    
+    @IBOutlet var buttons: [UIButton]!
+    
     @IBOutlet weak var userImageView: UIImageView!
     
     @IBOutlet weak var fullNameLabel: UILabel!
@@ -25,16 +27,26 @@ class ContactDetailsViewController: UIViewController, MainStoryboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         configureFromVM()
-        configureBackButton()
+        configureButtons()
         
     }
     
-    private func configureBackButton() {
+    private func configureButtons() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "chevron.backward"), style: .plain, target: self, action: #selector(backButtonTapped))
         navigationItem.leftBarButtonItem?.tintColor = UIColor(named: "BackButton")
+        
+        // hide buttons for all state
+        
+        for button in buttons {
+            button.setTitle("", for: .normal)
+            
+            button.setTitle("", for: .disabled)
+            
+            button.setTitle("", for: .selected)
+        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -46,9 +58,8 @@ class ContactDetailsViewController: UIViewController, MainStoryboarded {
     @IBAction func buttonTapped(_ sender: UIButton) {
         logPrint("BUTTON TAPPED \(sender.tag)")
         // coordinator should take responsibility for navigation based on tag
+        coordinator?.openUrlBased(on: sender.tag)
     }
-    
-
 }
 
 extension ContactDetailsViewController {
