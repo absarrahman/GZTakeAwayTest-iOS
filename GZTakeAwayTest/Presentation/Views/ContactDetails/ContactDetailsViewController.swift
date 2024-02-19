@@ -8,9 +8,11 @@
 import UIKit
 import SDWebImage
 
-class ContactDetailsViewController: UIViewController {
+class ContactDetailsViewController: UIViewController, MainStoryboarded {
     
     var viewModel: ContactDetailsViewModel!
+    
+    weak var coordinator: ContactDetailsCoordinator?
 
     @IBOutlet weak var userImageView: UIImageView!
     

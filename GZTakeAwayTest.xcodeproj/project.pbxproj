@@ -26,6 +26,9 @@
 		5B97279A2B82048E00BBD27F /* SearchFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727992B82048E00BBD27F /* SearchFieldView.swift */; };
 		5BAA062C2B835905008A1FD7 /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAA062B2B835905008A1FD7 /* ContactDetailsViewController.swift */; };
 		5BAA062E2B835F89008A1FD7 /* ContactDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAA062D2B835F89008A1FD7 /* ContactDetailsViewModel.swift */; };
+		5BAA06322B837362008A1FD7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAA06312B837362008A1FD7 /* Coordinator.swift */; };
+		5BAA06362B8373C9008A1FD7 /* BaseStoryboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAA06352B8373C9008A1FD7 /* BaseStoryboarded.swift */; };
+		5BAA06382B837471008A1FD7 /* MainStoryboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAA06372B837471008A1FD7 /* MainStoryboarded.swift */; };
 		5BF329EF2B820FBC00BAE58A /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF329ED2B820FBC00BAE58A /* ContactTableViewCell.swift */; };
 		5BF329F02B820FBC00BAE58A /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF329EE2B820FBC00BAE58A /* ContactTableViewCell.xib */; };
 		5BF329F32B8233E100BAE58A /* ContactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF329F22B8233E100BAE58A /* ContactListViewModel.swift */; };
@@ -77,6 +80,9 @@
 		5B9727992B82048E00BBD27F /* SearchFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldView.swift; sourceTree = "<group>"; };
 		5BAA062B2B835905008A1FD7 /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
 		5BAA062D2B835F89008A1FD7 /* ContactDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewModel.swift; sourceTree = "<group>"; };
+		5BAA06312B837362008A1FD7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		5BAA06352B8373C9008A1FD7 /* BaseStoryboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseStoryboarded.swift; sourceTree = "<group>"; };
+		5BAA06372B837471008A1FD7 /* MainStoryboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStoryboarded.swift; sourceTree = "<group>"; };
 		5BF329ED2B820FBC00BAE58A /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		5BF329EE2B820FBC00BAE58A /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
 		5BF329F22B8233E100BAE58A /* ContactListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModel.swift; sourceTree = "<group>"; };
@@ -137,6 +143,7 @@
 			children = (
 				5B9727612B81F7D500BBD27F /* AppDelegate.swift */,
 				5B9727632B81F7D500BBD27F /* SceneDelegate.swift */,
+				5BAA06342B837370008A1FD7 /* Navigations */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -257,6 +264,24 @@
 				5BAA062F2B835FA8008A1FD7 /* ContactDetails */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5BAA06342B837370008A1FD7 /* Navigations */ = {
+			isa = PBXGroup;
+			children = (
+				5BAA06312B837362008A1FD7 /* Coordinator.swift */,
+				5BAA06392B8374E4008A1FD7 /* Storyboarded */,
+			);
+			path = Navigations;
+			sourceTree = "<group>";
+		};
+		5BAA06392B8374E4008A1FD7 /* Storyboarded */ = {
+			isa = PBXGroup;
+			children = (
+				5BAA06352B8373C9008A1FD7 /* BaseStoryboarded.swift */,
+				5BAA06372B837471008A1FD7 /* MainStoryboarded.swift */,
+			);
+			path = Storyboarded;
 			sourceTree = "<group>";
 		};
 		5BF329F12B820FC900BAE58A /* ContactTableViewCell */ = {
@@ -439,12 +464,15 @@
 				5BF329EF2B820FBC00BAE58A /* ContactTableViewCell.swift in Sources */,
 				5BF32A042B825BD800BAE58A /* ShimmerTableViewCell.swift in Sources */,
 				5B1EDF852B83173600F5ED30 /* NetworkManager.swift in Sources */,
+				5BAA06322B837362008A1FD7 /* Coordinator.swift in Sources */,
 				5B97279A2B82048E00BBD27F /* SearchFieldView.swift in Sources */,
+				5BAA06362B8373C9008A1FD7 /* BaseStoryboarded.swift in Sources */,
 				5BF329F32B8233E100BAE58A /* ContactListViewModel.swift in Sources */,
 				5B9727622B81F7D500BBD27F /* AppDelegate.swift in Sources */,
 				5B9727642B81F7D500BBD27F /* SceneDelegate.swift in Sources */,
 				5BF329F92B823ECC00BAE58A /* ContactsModel.swift in Sources */,
 				5B1EDF872B831FA100F5ED30 /* DataManagerProtocol.swift in Sources */,
+				5BAA06382B837471008A1FD7 /* MainStoryboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,7 +661,6 @@
 				INFOPLIST_FILE = GZTakeAwayTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -661,7 +688,6 @@
 				INFOPLIST_FILE = GZTakeAwayTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
