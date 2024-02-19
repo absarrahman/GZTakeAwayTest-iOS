@@ -26,4 +26,13 @@ class ContactDetailsCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: true)
     }
     
+    func dismiss() {
+        let vc = navigationController.popViewController(animated: true)
+        guard let vc = vc else {
+            logPrint("Popped vc is empty")
+            return
+        }
+        logPrint("Popping \(String(describing: vc))")
+    }
+    
 }

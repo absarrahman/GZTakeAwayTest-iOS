@@ -62,12 +62,12 @@ class NetworkManager: DataManagerProtocol {
                         let results = try decoder.decode(T.self, from: data)
                         completion(.success(results))
                     } catch {
-                        print("ERROR OCCURRED \(error)")
+                        logPrint("ERROR OCCURRED \(error)")
                         completion(.failure(NetworkError.jsonDecodingError))
                     }
                 case .failure(let error):
                     // it failed to communicate with the server
-                    print("FAILURE is \(error.localizedDescription)")
+                    logPrint("FAILURE is \(error.localizedDescription)")
                     completion(.failure(NetworkError.failedToContactServer))
                 }
             }

@@ -46,6 +46,7 @@ extension MainCoordinator: UINavigationControllerDelegate  {
         if navigationController.viewControllers.contains(fromVC) {
             return
         }
+        logPrint("Pop detected")
         // popping
         if let detailsVC = fromVC as? ContactDetailsViewController {
             childDidFinish(detailsVC.coordinator)
