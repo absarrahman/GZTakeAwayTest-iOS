@@ -10,7 +10,8 @@ import Combine
 
 class ContactListViewController: UIViewController {
     
-    let viewModel = ContactListViewModel()
+    // TODO: - Should be initialized in Coordinator
+    let viewModel = ContactListViewModel(NetworkManager.shared)
     
     
     @IBOutlet weak var tableView: UITableView!

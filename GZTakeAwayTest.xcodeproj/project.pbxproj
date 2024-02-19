@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B1EDF852B83173600F5ED30 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1EDF842B83173600F5ED30 /* NetworkManager.swift */; };
+		5B1EDF872B831FA100F5ED30 /* DataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1EDF862B831FA100F5ED30 /* DataManagerProtocol.swift */; };
 		5B9727622B81F7D500BBD27F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727612B81F7D500BBD27F /* AppDelegate.swift */; };
 		5B9727642B81F7D500BBD27F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727632B81F7D500BBD27F /* SceneDelegate.swift */; };
 		5B9727662B81F7D500BBD27F /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727652B81F7D500BBD27F /* ContactListViewController.swift */; };
@@ -26,7 +28,7 @@
 		5BF329FB2B82591900BAE58A /* UIView+Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF329FA2B82591900BAE58A /* UIView+Shimmer.swift */; };
 		5BF32A042B825BD800BAE58A /* ShimmerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF32A022B825BD800BAE58A /* ShimmerTableViewCell.swift */; };
 		5BF32A052B825BD800BAE58A /* ShimmerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF32A032B825BD800BAE58A /* ShimmerTableViewCell.xib */; };
-		5BF32A072B82672B00BAE58A /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF32A062B82672B00BAE58A /* Secret.swift */; };
+		5BF32A072B82672B00BAE58A /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF32A062B82672B00BAE58A /* ApiEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B1EDF842B83173600F5ED30 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5B1EDF862B831FA100F5ED30 /* DataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerProtocol.swift; sourceTree = "<group>"; };
 		5B97275E2B81F7D500BBD27F /* GZTakeAwayTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GZTakeAwayTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9727612B81F7D500BBD27F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B9727632B81F7D500BBD27F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +73,7 @@
 		5BF329FA2B82591900BAE58A /* UIView+Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmer.swift"; sourceTree = "<group>"; };
 		5BF32A022B825BD800BAE58A /* ShimmerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerTableViewCell.swift; sourceTree = "<group>"; };
 		5BF32A032B825BD800BAE58A /* ShimmerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShimmerTableViewCell.xib; sourceTree = "<group>"; };
-		5BF32A062B82672B00BAE58A /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		5BF32A062B82672B00BAE58A /* ApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B1EDF832B83171800F5ED30 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5BF32A062B82672B00BAE58A /* ApiEndpoint.swift */,
+				5B1EDF842B83173600F5ED30 /* NetworkManager.swift */,
+				5B1EDF862B831FA100F5ED30 /* DataManagerProtocol.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		5B9727552B81F7D500BBD27F = {
 			isa = PBXGroup;
 			children = (
@@ -132,9 +146,8 @@
 				5BF329F12B820FC900BAE58A /* ContactTableViewCell */,
 				5BF329F82B823ECC00BAE58A /* ContactsModel.swift */,
 				5BF329FA2B82591900BAE58A /* UIView+Shimmer.swift */,
-				5BF32A022B825BD800BAE58A /* ShimmerTableViewCell.swift */,
-				5BF32A032B825BD800BAE58A /* ShimmerTableViewCell.xib */,
-				5BF32A062B82672B00BAE58A /* Secret.swift */,
+				5BF32A082B826F3D00BAE58A /* ShimmerTableViewCell */,
+				5B1EDF832B83171800F5ED30 /* Data */,
 			);
 			path = GZTakeAwayTest;
 			sourceTree = "<group>";
@@ -181,6 +194,15 @@
 				5BF329F22B8233E100BAE58A /* ContactListViewModel.swift */,
 			);
 			path = ContactList;
+			sourceTree = "<group>";
+		};
+		5BF32A082B826F3D00BAE58A /* ShimmerTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5BF32A022B825BD800BAE58A /* ShimmerTableViewCell.swift */,
+				5BF32A032B825BD800BAE58A /* ShimmerTableViewCell.xib */,
+			);
+			path = ShimmerTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,15 +346,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BF329FB2B82591900BAE58A /* UIView+Shimmer.swift in Sources */,
-				5BF32A072B82672B00BAE58A /* Secret.swift in Sources */,
+				5BF32A072B82672B00BAE58A /* ApiEndpoint.swift in Sources */,
 				5B9727662B81F7D500BBD27F /* ContactListViewController.swift in Sources */,
 				5BF329EF2B820FBC00BAE58A /* ContactTableViewCell.swift in Sources */,
 				5BF32A042B825BD800BAE58A /* ShimmerTableViewCell.swift in Sources */,
+				5B1EDF852B83173600F5ED30 /* NetworkManager.swift in Sources */,
 				5B97279A2B82048E00BBD27F /* SearchFieldView.swift in Sources */,
 				5BF329F32B8233E100BAE58A /* ContactListViewModel.swift in Sources */,
 				5B9727622B81F7D500BBD27F /* AppDelegate.swift in Sources */,
 				5B9727642B81F7D500BBD27F /* SceneDelegate.swift in Sources */,
 				5BF329F92B823ECC00BAE58A /* ContactsModel.swift in Sources */,
+				5B1EDF872B831FA100F5ED30 /* DataManagerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

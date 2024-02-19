@@ -9,19 +9,20 @@ import Foundation
 
 // MARK: - ContactsModel
 struct ContactsModel: Codable {
-    let error: Error?
-    let result: [Result]?
+    let error: ServerError?
+    let result: [ContactModel]?
     let status: Bool?
+    
 }
 
-// MARK: - Error
-struct Error: Codable {
+// MARK: - ServerError
+struct ServerError: Codable {
     let message: String?
     let code: Int?
 }
 
-// MARK: - Result
-struct Result: Codable {
+// MARK: - ContactModel
+struct ContactModel: Codable {
     let fullName, phoneNumber, email: String?
     let image: String?
 }
