@@ -36,34 +36,5 @@ class ContactListViewModel {
                 loadingState = .none
             }
         }
-        
-        // TODO: NEEDS REFACTOR
-//        AF.request(ApiEndpoint.baseUrl).response { response in
-//            
-//            DispatchQueue.main.async {[weak self] in
-//                
-//                guard let self = self else { return }
-//                
-//                switch response.result {
-//                case .success(let data):
-//                    guard let data = data else { return }
-//                    let decoder = JSONDecoder()
-//                    decoder.keyDecodingStrategy = .convertFromSnakeCase
-//                    
-//                    do {
-//                        let results = try decoder.decode(ContactsModel.self, from: data)
-//                        contactModels = results.result ?? []
-//                    } catch {
-//                        print("ERROR OCCURRED \(error)")
-//                    }
-//                    loadingState = .finished
-//                case .failure(let failure):
-//                    loadingState = .none
-//                    // if sessionTaskError
-//                    // it failed to communicate with the server
-//                    print("FAILURE is \(failure.localizedDescription)")
-//                }
-//            }
-//        }
     }
 }

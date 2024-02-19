@@ -8,11 +8,12 @@
 import UIKit
 import Combine
 
-class ContactListViewController: UIViewController {
+class ContactListViewController: UIViewController, MainStoryboarded {
     
     // TODO: - Should be initialized in Coordinator
-    let viewModel = ContactListViewModel(NetworkManager.shared)
+    var viewModel: ContactListViewModel!
     
+    weak var mainCoordinator: MainCoordinator?
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -53,7 +54,7 @@ extension ContactListViewController: UITableViewDataSource {
         
         if viewModel.loadingState != .finished {
             let cell = tableView.dequeueReusableCell(withIdentifier: ShimmerTableViewCell.identifier, for: indexPath) as! ShimmerTableViewCell
-            cell.startAnimating()
+            cell.startLoadingAnimation()
             
             return cell
             
@@ -72,11 +73,8 @@ extension ContactListViewController: UITableViewDataSource {
 extension ContactListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let storyboard = UIStoryboard(name: "Main", bundle: .main)
-        let vc = storyboard.instantiateViewController(withIdentifier: "ContactDetailsViewController") as! ContactDetailsViewController
-        
         let model = viewModel.contactModels[indexPath.row]
-        vc.viewModel = ContactDetailsViewModel(model)
-        present(vc, animated: true)
+        
+        mainCoordinator?.goToDetails(model)
     }
 }
