@@ -52,6 +52,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="searchFieldView" destination="5Tv-lr-zEw" id="LLj-bK-v4n"/>
                         <outlet property="tableView" destination="K6e-zJ-Vhw" id="C5w-DR-Ecw"/>
                     </connections>
                 </viewController>
