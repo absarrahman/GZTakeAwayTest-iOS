@@ -20,6 +20,7 @@ class NetworkManager: DataManagerProtocol {
         case noDataError
         case jsonDecodingError
         case failedToContactServer
+        case serverError
         
         var localizedDescription: String {
             switch self {
@@ -28,7 +29,10 @@ class NetworkManager: DataManagerProtocol {
             case .jsonDecodingError:
                 return NSLocalizedString("JSON decoding failed", comment: "")
             case .failedToContactServer:
-                return NSLocalizedString("Failed to contact server", comment: "")
+                return NSLocalizedString("Failed to contact server.\nCheck your internet connection", comment: "")
+            case .serverError:
+                return NSLocalizedString("Server error occurred. Contact support team", comment: "")
+
             }
         }
     }
@@ -82,7 +86,17 @@ class NetworkManager: DataManagerProtocol {
         fetchDataFromAPI(from: endpoint) { (result: Result<ContactsModel, Error>) in
             switch result {
             case .success(let data):
-                completion(.success(data.result))
+                
+                if (data.error?.code) != nil {
+                    completion(.failure(NetworkError.serverError))
+                    return
+                }
+                guard let result = data.result else {
+                    // what if the key for result does not exist? Handle it
+                    completion(.failure(NetworkError.noDataError))
+                    return
+                }
+                completion(.success(result))
             case .failure(let error):
                 completion(.failure(error))
             }

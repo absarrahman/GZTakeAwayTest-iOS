@@ -22,10 +22,19 @@ class ContactListViewController: UIViewController, MainStoryboarded {
     
     
     private var subscriptions: Set<AnyCancellable> = []
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        setupViews()
+        
+        bindData()
+        
+        viewModel.fetchData()
+    }
+    
+    private func setupViews() {
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -37,7 +46,9 @@ class ContactListViewController: UIViewController, MainStoryboarded {
         tableView.register(UINib(nibName: ShimmerTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: ShimmerTableViewCell.identifier)
         
         searchFieldView.isUserInteractionEnabled = false
-        
+    }
+    
+    private func bindData() {
         viewModel.$loadingState.sink { [weak self] loadingState in
             guard let self = self else { return }
             if loadingState == .finished {
@@ -46,10 +57,15 @@ class ContactListViewController: UIViewController, MainStoryboarded {
             }
         }.store(in: &subscriptions)
         
-        viewModel.fetchData()
+        viewModel.$error.sink { [weak self] error in
+            guard let self = self else { return }
+            if let error = error {
+                // tell coordinator to show alert dialog
+                mainCoordinator?.showAlertError(viewController: self, error: error)
+            }
+        }.store(in: &subscriptions)
     }
-
-
+    
 }
 
 // MARK: - UITableViewDataSource

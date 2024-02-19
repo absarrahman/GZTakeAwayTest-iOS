@@ -38,6 +38,28 @@ class MainCoordinator: NSObject, Coordinator {
             }
         }
     }
+    
+    func showAlertError(viewController: UIViewController, error: Error) {
+        guard let error = error as? NetworkManager.NetworkError else { return  }
+        
+        let alertController = UIAlertController(title: "Something went wrong", message: "\(error.localizedDescription)", preferredStyle: .alert)
+
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        
+        if error == .failedToContactServer {
+            let successAction = UIAlertAction(title: "Open settings", style: .default) {_ in
+                
+                if let url = URL(string: UIApplication.openSettingsURLString) {
+                    // open setting
+                    UIApplication.shared.open(url)
+                }
+            }
+            alertController.addAction(successAction)
+        }
+        alertController.addAction(cancelAction)
+        viewController.present(alertController, animated: true)
+    }
 }
 
 extension MainCoordinator: UINavigationControllerDelegate  {
