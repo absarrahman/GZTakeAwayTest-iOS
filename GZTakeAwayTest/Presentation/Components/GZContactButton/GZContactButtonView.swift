@@ -8,7 +8,7 @@
 import UIKit
 
 @IBDesignable
-class GZContactButton: UIButton {
+class GZContactButtonView: UIView {
     
     @IBOutlet private weak var view: UIView!
     
@@ -35,9 +35,8 @@ class GZContactButton: UIButton {
     
     fileprivate func setupNib() {
         let bundle = Bundle(for: SearchFieldView.self)
-        bundle.loadNibNamed("GZContactButton", owner: self)
+        bundle.loadNibNamed("GZContactButtonView", owner: self)
         addSubview(view)
-        setTitle("", for: .normal)
         view.frame = self.bounds
     }
     

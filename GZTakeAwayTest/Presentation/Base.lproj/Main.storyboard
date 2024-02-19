@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bJb-WE-Qkv">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -15,24 +15,24 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ContactListViewController" customModule="GZTakeAwayTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Contacts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93q-Ej-fyY">
-                                <rect key="frame" x="10" y="30" width="355" height="20"/>
+                                <rect key="frame" x="10" y="30" width="300" height="20"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Tv-lr-zEw" userLabel="SearchView" customClass="SearchFieldView" customModule="GZTakeAwayTest" customModuleProvider="target">
-                                <rect key="frame" x="20" y="72" width="335" height="36"/>
+                                <rect key="frame" x="20" y="72" width="280" height="36"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="asl-sV-cz4"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="K6e-zJ-Vhw">
-                                <rect key="frame" x="0.0" y="124" width="375" height="543"/>
+                                <rect key="frame" x="0.0" y="124" width="320" height="444"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -59,74 +59,155 @@
             </objects>
             <point key="canvasLocation" x="112.5" y="-27.464788732394368"/>
         </scene>
-        <!--View Controller-->
+        <!--Contact Details View Controller-->
         <scene sceneID="Vh4-s0-WK2">
             <objects>
-                <viewController id="bJb-WE-Qkv" sceneMemberID="viewController">
+                <viewController id="bJb-WE-Qkv" customClass="ContactDetailsViewController" customModule="GZTakeAwayTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dNl-Nc-4Rk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0iL-Ob-rSq">
-                                <rect key="frame" x="75" y="33" width="225" height="222.5"/>
+                                <rect key="frame" x="64" y="33" width="192" height="189.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0iL-Ob-rSq" secondAttribute="height" multiplier="1:1" id="0ZT-iE-TmF"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luther Wilson" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dA5-ze-Ueb">
-                                <rect key="frame" x="72" y="281" width="231" height="33.5"/>
+                                <rect key="frame" x="61" y="248" width="198" height="33.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                 <color key="textColor" name="TextDart"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlf-gA-kNX">
-                                <rect key="frame" x="72" y="318.5" width="231" height="17"/>
+                                <rect key="frame" x="61" y="285.5" width="198" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" name="SecondaryText"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rp6-DQ-Flg">
-                                <rect key="frame" x="72" y="339.5" width="231" height="17"/>
+                                <rect key="frame" x="61" y="306.5" width="198" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" name="SecondaryText"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="XyT-nJ-44O" userLabel="Button Stack View">
-                                <rect key="frame" x="16" y="380.5" width="343" height="70.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="xps-Rj-jF4" userLabel="Button Stack View">
+                                <rect key="frame" x="16" y="347.5" width="288" height="70.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOp-j4-4Zg" customClass="GZContactButton" customModule="GZTakeAwayTest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="97.5" height="70.5"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1To-Tg-s0F" userLabel="Call Button View">
+                                        <rect key="frame" x="0.0" y="0.0" width="79.5" height="70.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NDw-cS-q7M" customClass="GZContactButtonView" customModule="GZTakeAwayTest" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.5" height="70.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="phone.fill" catalog="system"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="buttonText" value="Call"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McE-fC-GSe" userLabel="Call Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.5" height="70.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="bJb-WE-Qkv" eventType="touchUpInside" id="Qj9-Tq-hGK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="NDw-cS-q7M" secondAttribute="trailing" id="Eni-dl-FyF"/>
+                                            <constraint firstAttribute="trailing" secondItem="McE-fC-GSe" secondAttribute="trailing" id="Pdp-vu-7CX"/>
+                                            <constraint firstAttribute="bottom" secondItem="McE-fC-GSe" secondAttribute="bottom" id="PxT-ee-oDs"/>
+                                            <constraint firstAttribute="bottom" secondItem="NDw-cS-q7M" secondAttribute="bottom" id="aJQ-yJ-9cl"/>
+                                            <constraint firstItem="McE-fC-GSe" firstAttribute="top" secondItem="1To-Tg-s0F" secondAttribute="top" id="eYY-hU-19D"/>
+                                            <constraint firstItem="NDw-cS-q7M" firstAttribute="leading" secondItem="1To-Tg-s0F" secondAttribute="leading" id="f19-vg-2BZ"/>
+                                            <constraint firstItem="NDw-cS-q7M" firstAttribute="top" secondItem="1To-Tg-s0F" secondAttribute="top" id="qbq-LI-AUg"/>
+                                            <constraint firstItem="McE-fC-GSe" firstAttribute="leading" secondItem="1To-Tg-s0F" secondAttribute="leading" id="wlY-DU-jg2"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="buttonImg" value="phone.fill" catalog="system"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="buttonText" value="Call"/>
                                             <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="phone.fill" catalog="system"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="buttonText" value="Call"/>
                                         </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StQ-ay-PiS" customClass="GZContactButton" customModule="GZTakeAwayTest" customModuleProvider="target">
-                                        <rect key="frame" x="122.5" y="0.0" width="98" height="70.5"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fZc-mC-lo3" userLabel="Message Button View">
+                                        <rect key="frame" x="104.5" y="0.0" width="79" height="70.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G9m-ng-v4H" customClass="GZContactButtonView" customModule="GZTakeAwayTest" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="79" height="70.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="message.fill" catalog="system"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="buttonText" value="Message"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E32-Dt-zYs" userLabel="Message Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="79" height="70.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="bJb-WE-Qkv" eventType="touchUpInside" id="pS0-NQ-J5D"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="E32-Dt-zYs" secondAttribute="bottom" id="5CI-ZV-pVX"/>
+                                            <constraint firstItem="G9m-ng-v4H" firstAttribute="top" secondItem="fZc-mC-lo3" secondAttribute="top" id="6Mo-53-9qk"/>
+                                            <constraint firstItem="G9m-ng-v4H" firstAttribute="leading" secondItem="fZc-mC-lo3" secondAttribute="leading" id="Ek0-8i-KmC"/>
+                                            <constraint firstAttribute="trailing" secondItem="G9m-ng-v4H" secondAttribute="trailing" id="h2g-iY-Ocg"/>
+                                            <constraint firstAttribute="bottom" secondItem="G9m-ng-v4H" secondAttribute="bottom" id="lcg-YJ-m3l"/>
+                                            <constraint firstAttribute="trailing" secondItem="E32-Dt-zYs" secondAttribute="trailing" id="rjt-Nn-3x9"/>
+                                            <constraint firstItem="E32-Dt-zYs" firstAttribute="top" secondItem="fZc-mC-lo3" secondAttribute="top" id="sQN-zG-fPj"/>
+                                            <constraint firstItem="E32-Dt-zYs" firstAttribute="leading" secondItem="fZc-mC-lo3" secondAttribute="leading" id="tuo-KA-Ixh"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="buttonImg" value="message.fill" catalog="system"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="buttonText" value="Message"/>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="message.fill" catalog="system"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="phone.fill" catalog="system"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="buttonText" value="Call"/>
                                         </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCw-Mo-X98" customClass="GZContactButton" customModule="GZTakeAwayTest" customModuleProvider="target">
-                                        <rect key="frame" x="245.5" y="0.0" width="97.5" height="70.5"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fE4-GP-Wwt" userLabel="Email Button View">
+                                        <rect key="frame" x="208.5" y="0.0" width="79.5" height="70.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivn-xf-Dn8" customClass="GZContactButtonView" customModule="GZTakeAwayTest" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.5" height="70.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="envelope.fill" catalog="system"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="buttonText" value="Email"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIx-dA-hVr" userLabel="Email Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.5" height="70.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="bJb-WE-Qkv" eventType="touchUpInside" id="bwJ-xP-ufr"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ivn-xf-Dn8" secondAttribute="trailing" id="0mb-4V-3rB"/>
+                                            <constraint firstAttribute="trailing" secondItem="aIx-dA-hVr" secondAttribute="trailing" id="73w-Sn-jPc"/>
+                                            <constraint firstItem="aIx-dA-hVr" firstAttribute="top" secondItem="fE4-GP-Wwt" secondAttribute="top" id="9q9-Kh-1u4"/>
+                                            <constraint firstItem="ivn-xf-Dn8" firstAttribute="top" secondItem="fE4-GP-Wwt" secondAttribute="top" id="HHA-Eu-gLe"/>
+                                            <constraint firstItem="aIx-dA-hVr" firstAttribute="leading" secondItem="fE4-GP-Wwt" secondAttribute="leading" id="WA7-z4-sm0"/>
+                                            <constraint firstItem="ivn-xf-Dn8" firstAttribute="leading" secondItem="fE4-GP-Wwt" secondAttribute="leading" id="lVb-Ey-SVQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="aIx-dA-hVr" secondAttribute="bottom" id="mgI-d3-FwH"/>
+                                            <constraint firstAttribute="bottom" secondItem="ivn-xf-Dn8" secondAttribute="bottom" id="sfP-dD-UIO"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="buttonImg" value="envelope.fill" catalog="system"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="buttonText" value="Email"/>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="envelope.fill" catalog="system"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="phone.fill" catalog="system"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="buttonText" value="Call"/>
                                         </userDefinedRuntimeAttributes>
-                                    </button>
+                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -134,42 +215,28 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Rp6-DQ-Flg" firstAttribute="leading" secondItem="dA5-ze-Ueb" secondAttribute="leading" id="27E-pB-9yV"/>
+                            <constraint firstItem="xps-Rj-jF4" firstAttribute="top" secondItem="Rp6-DQ-Flg" secondAttribute="bottom" constant="24" id="6Q0-Av-mnQ"/>
                             <constraint firstItem="0iL-Ob-rSq" firstAttribute="width" secondItem="dNl-Nc-4Rk" secondAttribute="width" multiplier="0.6" id="B7g-gQ-DMA"/>
+                            <constraint firstItem="xps-Rj-jF4" firstAttribute="centerX" secondItem="dNl-Nc-4Rk" secondAttribute="centerX" id="E7B-2B-rpK"/>
                             <constraint firstItem="dA5-ze-Ueb" firstAttribute="trailing" secondItem="0iL-Ob-rSq" secondAttribute="trailing" constant="3" id="ESH-o9-5oX"/>
                             <constraint firstItem="dA5-ze-Ueb" firstAttribute="leading" secondItem="0iL-Ob-rSq" secondAttribute="leading" constant="-3" id="Ez5-w5-bON"/>
+                            <constraint firstItem="xps-Rj-jF4" firstAttribute="leading" secondItem="unc-eL-Aab" secondAttribute="leading" constant="16" id="G9R-mN-TzZ"/>
                             <constraint firstItem="nlf-gA-kNX" firstAttribute="trailing" secondItem="dA5-ze-Ueb" secondAttribute="trailing" id="IsK-Yv-j9R"/>
                             <constraint firstItem="nlf-gA-kNX" firstAttribute="leading" secondItem="dA5-ze-Ueb" secondAttribute="leading" id="Lry-aW-EOA"/>
                             <constraint firstItem="dA5-ze-Ueb" firstAttribute="top" secondItem="0iL-Ob-rSq" secondAttribute="bottom" constant="24" id="Lxw-Qj-p2c"/>
-                            <constraint firstItem="XyT-nJ-44O" firstAttribute="leading" secondItem="unc-eL-Aab" secondAttribute="leading" constant="16" id="OhJ-ag-ddr"/>
                             <constraint firstItem="Rp6-DQ-Flg" firstAttribute="top" secondItem="nlf-gA-kNX" secondAttribute="bottom" constant="4" id="YRi-hV-vFZ"/>
                             <constraint firstItem="Rp6-DQ-Flg" firstAttribute="trailing" secondItem="dA5-ze-Ueb" secondAttribute="trailing" id="ZnJ-Ve-wbr"/>
                             <constraint firstItem="0iL-Ob-rSq" firstAttribute="top" secondItem="unc-eL-Aab" secondAttribute="top" constant="12" id="f0Q-8z-ybq"/>
                             <constraint firstItem="nlf-gA-kNX" firstAttribute="top" secondItem="dA5-ze-Ueb" secondAttribute="bottom" constant="4" id="i4r-vu-n5c"/>
                             <constraint firstItem="0iL-Ob-rSq" firstAttribute="centerX" secondItem="dNl-Nc-4Rk" secondAttribute="centerX" id="jey-Vo-48n"/>
-                            <constraint firstItem="unc-eL-Aab" firstAttribute="trailing" secondItem="XyT-nJ-44O" secondAttribute="trailing" constant="16" id="lyP-N1-lsZ"/>
-                            <constraint firstItem="XyT-nJ-44O" firstAttribute="top" secondItem="Rp6-DQ-Flg" secondAttribute="bottom" constant="24" id="zyF-OZ-ucc"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="doz-MP-6VH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1060" y="-27.436281859070466"/>
+            <point key="canvasLocation" x="1059.375" y="-27.464788732394368"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="5Tv-lr-zEw">
-            <size key="intrinsicContentSize" width="200" height="36"/>
-        </designable>
-        <designable name="StQ-ay-PiS">
-            <size key="intrinsicContentSize" width="100" height="36"/>
-        </designable>
-        <designable name="dCw-Mo-X98">
-            <size key="intrinsicContentSize" width="100" height="36"/>
-        </designable>
-        <designable name="xOp-j4-4Zg">
-            <size key="intrinsicContentSize" width="100" height="36"/>
-        </designable>
-    </designables>
     <resources>
         <image name="envelope.fill" catalog="system" width="128" height="85"/>
         <image name="message.fill" catalog="system" width="128" height="114"/>

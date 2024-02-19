@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GZContactButton" customModule="GZTakeAwayTest" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GZContactButtonView" customModule="GZTakeAwayTest" customModuleProvider="target">
             <connections>
                 <outlet property="buttonImageView" destination="NfY-7x-5oO" id="O9t-vT-0eF"/>
                 <outlet property="buttonLabel" destination="om4-yi-zfI" id="xIV-kv-a2Z"/>
