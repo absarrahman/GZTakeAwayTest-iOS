@@ -15,6 +15,9 @@ class ContactListViewModel {
     private var duplicateModels: [ContactModel] = []
     
     @Published var loadingState: LoadingStatus = .none
+    
+    @Published var error: Error?
+    
     let manager: DataManagerProtocol
     
     init(_ manager: DataManagerProtocol) {
@@ -34,8 +37,8 @@ class ContactListViewModel {
                 loadingState = .finished
                 
             case .failure(let error):
-                // TODO: Capture error to show the user
                 loadingState = .none
+                self.error = error
             }
         }
     }
