@@ -54,7 +54,7 @@ extension ContactListViewController: UITableViewDataSource {
         
         if viewModel.loadingState != .finished {
             let cell = tableView.dequeueReusableCell(withIdentifier: ShimmerTableViewCell.identifier, for: indexPath) as! ShimmerTableViewCell
-            cell.startAnimating()
+            cell.startLoadingAnimation()
             
             return cell
             

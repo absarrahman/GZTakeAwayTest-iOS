@@ -38,7 +38,7 @@ extension UIView {
         return animation
     }
     
-    func startAnimating() {
+    func startShimmerAnimation() {
         
         let gradientLayer = addGradientLayer()
         let animation = addAnimation()

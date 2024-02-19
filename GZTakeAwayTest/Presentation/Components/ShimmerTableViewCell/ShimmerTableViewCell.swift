@@ -11,8 +11,14 @@ class ShimmerTableViewCell: UITableViewCell {
     
     static let identifier = "ShimmerTableViewCell"
     
+    @IBOutlet private weak var imgView: UIImageView!
     
-    @IBOutlet weak var parentView: UIView!
+    @IBOutlet private weak var nameLabel: UILabel!
+    
+    
+    @IBOutlet private weak var phoneLabel: UILabel!
+    
+    @IBOutlet private weak var parentView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,7 +31,14 @@ class ShimmerTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func startShimmer() {
-        parentView.startAnimating()
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        // Since width and height are equal. Setting cornerRadius to half of height will make it circular
+        imgView.layer.cornerRadius = imgView.bounds.height / 2
+    }
+    func startLoadingAnimation() {
+        imgView.startShimmerAnimation()
+        nameLabel.startShimmerAnimation()
+        phoneLabel.startShimmerAnimation()
     }
 }

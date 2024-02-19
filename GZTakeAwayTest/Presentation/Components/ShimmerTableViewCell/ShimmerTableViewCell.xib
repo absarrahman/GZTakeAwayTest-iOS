@@ -76,7 +76,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="imgView" destination="SpY-Pm-14Y" id="blP-Q6-DOV"/>
+                <outlet property="nameLabel" destination="Yko-Fx-v5a" id="NT2-F9-gTv"/>
                 <outlet property="parentView" destination="Y9O-DT-qFR" id="GeU-nM-UH3"/>
+                <outlet property="phoneLabel" destination="x06-Hf-YbK" id="XlY-Ni-1uE"/>
             </connections>
             <point key="canvasLocation" x="171.75572519083968" y="23.239436619718312"/>
         </tableViewCell>
