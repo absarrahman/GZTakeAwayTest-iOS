@@ -61,7 +61,7 @@ class ContactListViewController: UIViewController, MainStoryboarded {
             guard let self = self else { return }
             if let error = error {
                 // tell coordinator to show alert dialog
-                mainCoordinator?.showAlertError(viewController: self, error: error)
+                mainCoordinator?.showAlertError(error: error)
             }
         }.store(in: &subscriptions)
     }
@@ -79,6 +79,7 @@ extension ContactListViewController: UITableViewDataSource {
         if viewModel.loadingState != .finished {
             let cell = tableView.dequeueReusableCell(withIdentifier: ShimmerTableViewCell.identifier, for: indexPath) as! ShimmerTableViewCell
             cell.startLoadingAnimation()
+            cell.isUserInteractionEnabled = false
             
             return cell
             

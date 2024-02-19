@@ -18,4 +18,8 @@ extension String {
         // (270) 555-0117
         return "(\(numberArr[0])) \(numberArr[1])-\(numberArr[2])"
     }
+    
+    var noDashedNumber: Self {
+        return self.replacingOccurrences(of: "-", with: "")
+    }
 }
