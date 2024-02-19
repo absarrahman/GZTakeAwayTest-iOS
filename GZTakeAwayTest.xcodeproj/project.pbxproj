@@ -112,6 +112,52 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		5B1EDF882B83217700F5ED30 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				5BF329F82B823ECC00BAE58A /* ContactsModel.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		5B1EDF892B8321C200F5ED30 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5B9727612B81F7D500BBD27F /* AppDelegate.swift */,
+				5B9727632B81F7D500BBD27F /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5B1EDF8A2B8321FE00F5ED30 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5BF329FA2B82591900BAE58A /* UIView+Shimmer.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5B1EDF8B2B8322D100F5ED30 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5B97279B2B82049200BBD27F /* SearchFieldView */,
+				5BF329F12B820FC900BAE58A /* ContactTableViewCell */,
+				5BF32A082B826F3D00BAE58A /* ShimmerTableViewCell */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5B1EDF8C2B83232900F5ED30 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5BF329F42B8233F300BAE58A /* ContactList */,
+				5B1EDF8B2B8322D100F5ED30 /* Components */,
+				5B1EDF8A2B8321FE00F5ED30 /* Utils */,
+				5B9727672B81F7D500BBD27F /* Main.storyboard */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		5B9727552B81F7D500BBD27F = {
 			isa = PBXGroup;
 			children = (
@@ -135,19 +181,13 @@
 		5B9727602B81F7D500BBD27F /* GZTakeAwayTest */ = {
 			isa = PBXGroup;
 			children = (
-				5B9727612B81F7D500BBD27F /* AppDelegate.swift */,
-				5B9727632B81F7D500BBD27F /* SceneDelegate.swift */,
-				5BF329F42B8233F300BAE58A /* ContactList */,
-				5B9727672B81F7D500BBD27F /* Main.storyboard */,
+				5B1EDF892B8321C200F5ED30 /* Application */,
+				5B1EDF8C2B83232900F5ED30 /* Presentation */,
+				5B1EDF882B83217700F5ED30 /* Domain */,
+				5B1EDF832B83171800F5ED30 /* Data */,
 				5B97276A2B81F7D600BBD27F /* Assets.xcassets */,
 				5B97276C2B81F7D600BBD27F /* LaunchScreen.storyboard */,
 				5B97276F2B81F7D600BBD27F /* Info.plist */,
-				5B97279B2B82049200BBD27F /* SearchFieldView */,
-				5BF329F12B820FC900BAE58A /* ContactTableViewCell */,
-				5BF329F82B823ECC00BAE58A /* ContactsModel.swift */,
-				5BF329FA2B82591900BAE58A /* UIView+Shimmer.swift */,
-				5BF32A082B826F3D00BAE58A /* ShimmerTableViewCell */,
-				5B1EDF832B83171800F5ED30 /* Data */,
 			);
 			path = GZTakeAwayTest;
 			sourceTree = "<group>";

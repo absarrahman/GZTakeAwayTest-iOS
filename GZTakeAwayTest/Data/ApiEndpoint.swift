@@ -8,5 +8,5 @@
 import Foundation
 
 struct ApiEndpoint {
-    static let baseUrl = ""
+    static let baseUrl = "https://dev.gozayaan.com/api/user_journey/contact_list/"
 }
