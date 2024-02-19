@@ -11,6 +11,8 @@
 		5B1EDF872B831FA100F5ED30 /* DataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1EDF862B831FA100F5ED30 /* DataManagerProtocol.swift */; };
 		5B1EDF8E2B8325E200F5ED30 /* String+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1EDF8D2B8325E200F5ED30 /* String+Format.swift */; };
 		5B1EDF912B832A5F00F5ED30 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 5B1EDF902B832A5F00F5ED30 /* SDWebImage */; };
+		5B1EDF932B83383300F5ED30 /* GZContactButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1EDF922B83383300F5ED30 /* GZContactButton.swift */; };
+		5B1EDF952B83385400F5ED30 /* GZContactButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B1EDF942B83385400F5ED30 /* GZContactButton.xib */; };
 		5B9727622B81F7D500BBD27F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727612B81F7D500BBD27F /* AppDelegate.swift */; };
 		5B9727642B81F7D500BBD27F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727632B81F7D500BBD27F /* SceneDelegate.swift */; };
 		5B9727662B81F7D500BBD27F /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727652B81F7D500BBD27F /* ContactListViewController.swift */; };
@@ -54,6 +56,8 @@
 		5B1EDF842B83173600F5ED30 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		5B1EDF862B831FA100F5ED30 /* DataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerProtocol.swift; sourceTree = "<group>"; };
 		5B1EDF8D2B8325E200F5ED30 /* String+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Format.swift"; sourceTree = "<group>"; };
+		5B1EDF922B83383300F5ED30 /* GZContactButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GZContactButton.swift; sourceTree = "<group>"; };
+		5B1EDF942B83385400F5ED30 /* GZContactButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GZContactButton.xib; sourceTree = "<group>"; };
 		5B97275E2B81F7D500BBD27F /* GZTakeAwayTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GZTakeAwayTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9727612B81F7D500BBD27F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B9727632B81F7D500BBD27F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 				5B97279B2B82049200BBD27F /* SearchFieldView */,
 				5BF329F12B820FC900BAE58A /* ContactTableViewCell */,
 				5BF32A082B826F3D00BAE58A /* ShimmerTableViewCell */,
+				5B1EDF962B8342B200F5ED30 /* GZContactButton */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -161,6 +166,15 @@
 				5B9727672B81F7D500BBD27F /* Main.storyboard */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5B1EDF962B8342B200F5ED30 /* GZContactButton */ = {
+			isa = PBXGroup;
+			children = (
+				5B1EDF922B83383300F5ED30 /* GZContactButton.swift */,
+				5B1EDF942B83385400F5ED30 /* GZContactButton.xib */,
+			);
+			path = GZContactButton;
 			sourceTree = "<group>";
 		};
 		5B9727552B81F7D500BBD27F = {
@@ -365,6 +379,7 @@
 				5B97276E2B81F7D600BBD27F /* LaunchScreen.storyboard in Resources */,
 				5BF32A052B825BD800BAE58A /* ShimmerTableViewCell.xib in Resources */,
 				5B9727982B82048000BBD27F /* SearchFieldView.xib in Resources */,
+				5B1EDF952B83385400F5ED30 /* GZContactButton.xib in Resources */,
 				5B97276B2B81F7D600BBD27F /* Assets.xcassets in Resources */,
 				5BF329F02B820FBC00BAE58A /* ContactTableViewCell.xib in Resources */,
 				5B9727692B81F7D500BBD27F /* Main.storyboard in Resources */,
@@ -393,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BF329FB2B82591900BAE58A /* UIView+Shimmer.swift in Sources */,
+				5B1EDF932B83383300F5ED30 /* GZContactButton.swift in Sources */,
 				5B1EDF8E2B8325E200F5ED30 /* String+Format.swift in Sources */,
 				5BF32A072B82672B00BAE58A /* ApiEndpoint.swift in Sources */,
 				5B9727662B81F7D500BBD27F /* ContactListViewController.swift in Sources */,
