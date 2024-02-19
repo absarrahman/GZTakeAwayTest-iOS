@@ -164,11 +164,10 @@
 		5B1EDF8C2B83232900F5ED30 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				5BF329F42B8233F300BAE58A /* ContactList */,
+				5BAA06302B8371CB008A1FD7 /* Views */,
 				5B1EDF8B2B8322D100F5ED30 /* Components */,
 				5B1EDF8A2B8321FE00F5ED30 /* Utils */,
 				5B9727672B81F7D500BBD27F /* Main.storyboard */,
-				5BAA062F2B835FA8008A1FD7 /* ContactDetails */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -249,6 +248,15 @@
 				5BAA062D2B835F89008A1FD7 /* ContactDetailsViewModel.swift */,
 			);
 			path = ContactDetails;
+			sourceTree = "<group>";
+		};
+		5BAA06302B8371CB008A1FD7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5BF329F42B8233F300BAE58A /* ContactList */,
+				5BAA062F2B835FA8008A1FD7 /* ContactDetails */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		5BF329F12B820FC900BAE58A /* ContactTableViewCell */ = {
