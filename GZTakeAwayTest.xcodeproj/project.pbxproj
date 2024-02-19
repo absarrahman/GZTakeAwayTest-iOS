@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B1EDF852B83173600F5ED30 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1EDF842B83173600F5ED30 /* NetworkManager.swift */; };
+		5B1EDF872B831FA100F5ED30 /* DataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1EDF862B831FA100F5ED30 /* DataManagerProtocol.swift */; };
+		5B1EDF8E2B8325E200F5ED30 /* String+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1EDF8D2B8325E200F5ED30 /* String+Format.swift */; };
+		5B1EDF912B832A5F00F5ED30 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 5B1EDF902B832A5F00F5ED30 /* SDWebImage */; };
 		5B9727622B81F7D500BBD27F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727612B81F7D500BBD27F /* AppDelegate.swift */; };
 		5B9727642B81F7D500BBD27F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727632B81F7D500BBD27F /* SceneDelegate.swift */; };
 		5B9727662B81F7D500BBD27F /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727652B81F7D500BBD27F /* ContactListViewController.swift */; };
@@ -18,6 +22,15 @@
 		5B9727852B81F7D600BBD27F /* GZTakeAwayTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727842B81F7D600BBD27F /* GZTakeAwayTestUITestsLaunchTests.swift */; };
 		5B9727982B82048000BBD27F /* SearchFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B9727972B82048000BBD27F /* SearchFieldView.xib */; };
 		5B97279A2B82048E00BBD27F /* SearchFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9727992B82048E00BBD27F /* SearchFieldView.swift */; };
+		5BF329EF2B820FBC00BAE58A /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF329ED2B820FBC00BAE58A /* ContactTableViewCell.swift */; };
+		5BF329F02B820FBC00BAE58A /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF329EE2B820FBC00BAE58A /* ContactTableViewCell.xib */; };
+		5BF329F32B8233E100BAE58A /* ContactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF329F22B8233E100BAE58A /* ContactListViewModel.swift */; };
+		5BF329F72B823B4100BAE58A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5BF329F62B823B4100BAE58A /* Alamofire */; };
+		5BF329F92B823ECC00BAE58A /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF329F82B823ECC00BAE58A /* ContactsModel.swift */; };
+		5BF329FB2B82591900BAE58A /* UIView+Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF329FA2B82591900BAE58A /* UIView+Shimmer.swift */; };
+		5BF32A042B825BD800BAE58A /* ShimmerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF32A022B825BD800BAE58A /* ShimmerTableViewCell.swift */; };
+		5BF32A052B825BD800BAE58A /* ShimmerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF32A032B825BD800BAE58A /* ShimmerTableViewCell.xib */; };
+		5BF32A072B82672B00BAE58A /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF32A062B82672B00BAE58A /* ApiEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B1EDF842B83173600F5ED30 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5B1EDF862B831FA100F5ED30 /* DataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerProtocol.swift; sourceTree = "<group>"; };
+		5B1EDF8D2B8325E200F5ED30 /* String+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Format.swift"; sourceTree = "<group>"; };
 		5B97275E2B81F7D500BBD27F /* GZTakeAwayTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GZTakeAwayTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9727612B81F7D500BBD27F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B9727632B81F7D500BBD27F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +69,14 @@
 		5B9727842B81F7D600BBD27F /* GZTakeAwayTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GZTakeAwayTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5B9727972B82048000BBD27F /* SearchFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchFieldView.xib; sourceTree = "<group>"; };
 		5B9727992B82048E00BBD27F /* SearchFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldView.swift; sourceTree = "<group>"; };
+		5BF329ED2B820FBC00BAE58A /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		5BF329EE2B820FBC00BAE58A /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
+		5BF329F22B8233E100BAE58A /* ContactListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModel.swift; sourceTree = "<group>"; };
+		5BF329F82B823ECC00BAE58A /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
+		5BF329FA2B82591900BAE58A /* UIView+Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmer.swift"; sourceTree = "<group>"; };
+		5BF32A022B825BD800BAE58A /* ShimmerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerTableViewCell.swift; sourceTree = "<group>"; };
+		5BF32A032B825BD800BAE58A /* ShimmerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShimmerTableViewCell.xib; sourceTree = "<group>"; };
+		5BF32A062B82672B00BAE58A /* ApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B1EDF912B832A5F00F5ED30 /* SDWebImage in Frameworks */,
+				5BF329F72B823B4100BAE58A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +106,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B1EDF832B83171800F5ED30 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5BF32A062B82672B00BAE58A /* ApiEndpoint.swift */,
+				5B1EDF842B83173600F5ED30 /* NetworkManager.swift */,
+				5B1EDF862B831FA100F5ED30 /* DataManagerProtocol.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5B1EDF882B83217700F5ED30 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				5BF329F82B823ECC00BAE58A /* ContactsModel.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		5B1EDF892B8321C200F5ED30 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5B9727612B81F7D500BBD27F /* AppDelegate.swift */,
+				5B9727632B81F7D500BBD27F /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5B1EDF8A2B8321FE00F5ED30 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5BF329FA2B82591900BAE58A /* UIView+Shimmer.swift */,
+				5B1EDF8D2B8325E200F5ED30 /* String+Format.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5B1EDF8B2B8322D100F5ED30 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5B97279B2B82049200BBD27F /* SearchFieldView */,
+				5BF329F12B820FC900BAE58A /* ContactTableViewCell */,
+				5BF32A082B826F3D00BAE58A /* ShimmerTableViewCell */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5B1EDF8C2B83232900F5ED30 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5BF329F42B8233F300BAE58A /* ContactList */,
+				5B1EDF8B2B8322D100F5ED30 /* Components */,
+				5B1EDF8A2B8321FE00F5ED30 /* Utils */,
+				5B9727672B81F7D500BBD27F /* Main.storyboard */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		5B9727552B81F7D500BBD27F = {
 			isa = PBXGroup;
 			children = (
@@ -103,14 +186,13 @@
 		5B9727602B81F7D500BBD27F /* GZTakeAwayTest */ = {
 			isa = PBXGroup;
 			children = (
-				5B9727612B81F7D500BBD27F /* AppDelegate.swift */,
-				5B9727632B81F7D500BBD27F /* SceneDelegate.swift */,
-				5B9727652B81F7D500BBD27F /* ContactListViewController.swift */,
-				5B9727672B81F7D500BBD27F /* Main.storyboard */,
+				5B1EDF892B8321C200F5ED30 /* Application */,
+				5B1EDF8C2B83232900F5ED30 /* Presentation */,
+				5B1EDF882B83217700F5ED30 /* Domain */,
+				5B1EDF832B83171800F5ED30 /* Data */,
 				5B97276A2B81F7D600BBD27F /* Assets.xcassets */,
 				5B97276C2B81F7D600BBD27F /* LaunchScreen.storyboard */,
 				5B97276F2B81F7D600BBD27F /* Info.plist */,
-				5B97279B2B82049200BBD27F /* SearchFieldView */,
 			);
 			path = GZTakeAwayTest;
 			sourceTree = "<group>";
@@ -141,6 +223,33 @@
 			path = SearchFieldView;
 			sourceTree = "<group>";
 		};
+		5BF329F12B820FC900BAE58A /* ContactTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5BF329ED2B820FBC00BAE58A /* ContactTableViewCell.swift */,
+				5BF329EE2B820FBC00BAE58A /* ContactTableViewCell.xib */,
+			);
+			path = ContactTableViewCell;
+			sourceTree = "<group>";
+		};
+		5BF329F42B8233F300BAE58A /* ContactList */ = {
+			isa = PBXGroup;
+			children = (
+				5B9727652B81F7D500BBD27F /* ContactListViewController.swift */,
+				5BF329F22B8233E100BAE58A /* ContactListViewModel.swift */,
+			);
+			path = ContactList;
+			sourceTree = "<group>";
+		};
+		5BF32A082B826F3D00BAE58A /* ShimmerTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5BF32A022B825BD800BAE58A /* ShimmerTableViewCell.swift */,
+				5BF32A032B825BD800BAE58A /* ShimmerTableViewCell.xib */,
+			);
+			path = ShimmerTableViewCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,6 +266,10 @@
 			dependencies = (
 			);
 			name = GZTakeAwayTest;
+			packageProductDependencies = (
+				5BF329F62B823B4100BAE58A /* Alamofire */,
+				5B1EDF902B832A5F00F5ED30 /* SDWebImage */,
+			);
 			productName = GZTakeAwayTest;
 			productReference = 5B97275E2B81F7D500BBD27F /* GZTakeAwayTest.app */;
 			productType = "com.apple.product-type.application";
@@ -229,6 +342,10 @@
 				Base,
 			);
 			mainGroup = 5B9727552B81F7D500BBD27F;
+			packageReferences = (
+				5BF329F52B823B4100BAE58A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				5B1EDF8F2B832A5F00F5ED30 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 5B97275F2B81F7D500BBD27F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -246,8 +363,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B97276E2B81F7D600BBD27F /* LaunchScreen.storyboard in Resources */,
+				5BF32A052B825BD800BAE58A /* ShimmerTableViewCell.xib in Resources */,
 				5B9727982B82048000BBD27F /* SearchFieldView.xib in Resources */,
 				5B97276B2B81F7D600BBD27F /* Assets.xcassets in Resources */,
+				5BF329F02B820FBC00BAE58A /* ContactTableViewCell.xib in Resources */,
 				5B9727692B81F7D500BBD27F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,10 +392,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF329FB2B82591900BAE58A /* UIView+Shimmer.swift in Sources */,
+				5B1EDF8E2B8325E200F5ED30 /* String+Format.swift in Sources */,
+				5BF32A072B82672B00BAE58A /* ApiEndpoint.swift in Sources */,
 				5B9727662B81F7D500BBD27F /* ContactListViewController.swift in Sources */,
+				5BF329EF2B820FBC00BAE58A /* ContactTableViewCell.swift in Sources */,
+				5BF32A042B825BD800BAE58A /* ShimmerTableViewCell.swift in Sources */,
+				5B1EDF852B83173600F5ED30 /* NetworkManager.swift in Sources */,
 				5B97279A2B82048E00BBD27F /* SearchFieldView.swift in Sources */,
+				5BF329F32B8233E100BAE58A /* ContactListViewModel.swift in Sources */,
 				5B9727622B81F7D500BBD27F /* AppDelegate.swift in Sources */,
 				5B9727642B81F7D500BBD27F /* SceneDelegate.swift in Sources */,
+				5BF329F92B823ECC00BAE58A /* ContactsModel.swift in Sources */,
+				5B1EDF872B831FA100F5ED30 /* DataManagerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +512,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -441,7 +570,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -464,8 +594,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,8 +622,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -625,6 +753,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5B1EDF8F2B832A5F00F5ED30 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.18.11;
+			};
+		};
+		5BF329F52B823B4100BAE58A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5B1EDF902B832A5F00F5ED30 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B1EDF8F2B832A5F00F5ED30 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		5BF329F62B823B4100BAE58A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5BF329F52B823B4100BAE58A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5B9727562B81F7D500BBD27F /* Project object */;
 }
