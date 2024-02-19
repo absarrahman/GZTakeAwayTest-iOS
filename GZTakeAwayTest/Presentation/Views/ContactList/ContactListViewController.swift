@@ -17,6 +17,10 @@ class ContactListViewController: UIViewController, MainStoryboarded {
     
     @IBOutlet weak var tableView: UITableView!
     
+    
+    @IBOutlet weak var searchFieldView: SearchFieldView!
+    
+    
     private var subscriptions: Set<AnyCancellable> = []
 
     override func viewDidLoad() {
@@ -26,15 +30,19 @@ class ContactListViewController: UIViewController, MainStoryboarded {
         tableView.dataSource = self
         tableView.delegate = self
         
+        searchFieldView.textfield.delegate = self
+        
         tableView.register(UINib(nibName: ContactTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: ContactTableViewCell.identifier)
         
         tableView.register(UINib(nibName: ShimmerTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: ShimmerTableViewCell.identifier)
         
+        searchFieldView.isUserInteractionEnabled = false
         
         viewModel.$loadingState.sink { [weak self] loadingState in
             guard let self = self else { return }
             if loadingState == .finished {
                 tableView.reloadData()
+                searchFieldView.isUserInteractionEnabled = true
             }
         }.store(in: &subscriptions)
         
@@ -76,5 +84,12 @@ extension ContactListViewController: UITableViewDelegate {
         let model = viewModel.contactModels[indexPath.row]
         
         mainCoordinator?.goToDetails(model)
+    }
+}
+
+extension ContactListViewController: UITextFieldDelegate {
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        viewModel.searchContact(query: textField.text)
+        tableView.reloadData()
     }
 }
