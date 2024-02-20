@@ -24,12 +24,14 @@ class MainCoordinator: NSObject, Coordinator {
         navigationController.pushViewController(vc, animated: false)
     }
     
+    /// Navigates user to the contact details view
     func goToDetails(_ contactModel: ContactModel) {
         let detailsCoordinator = ContactDetailsCoordinator(navigationController: navigationController, model: contactModel)
         
         detailsCoordinator.start()
     }
     
+    /// Removes child coordinator after poping the view controller
     func childDidFinish(_ child: Coordinator?) {
         for (index, coordinator) in childCoordinators.enumerated() {
             if coordinator === child {
@@ -39,6 +41,7 @@ class MainCoordinator: NSObject, Coordinator {
         }
     }
     
+    /// Shows error alert if an error takes place
     func showAlertError(error: Error) {
         guard let error = error as? NetworkManager.NetworkError else { return  }
         
@@ -62,6 +65,7 @@ class MainCoordinator: NSObject, Coordinator {
     }
 }
 
+// MARK: - UINavigationControllerDelegate
 extension MainCoordinator: UINavigationControllerDelegate  {
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
         guard let fromVC = navigationController.transitionCoordinator?.viewController(forKey: .from) else { return }
