@@ -7,14 +7,13 @@
 
 import UIKit
 
-// https://github.com/VasudhaJha/ShimmerAnimationComplete/blob/master/ShimmerAnimationComplete/ShimmerView.swift
 extension UIView {
     var gradientColorOne : CGColor { UIColor(white: 0.85, alpha: 1.0).cgColor }
     var gradientColorTwo : CGColor { UIColor(white: 0.95, alpha: 1.0).cgColor }
     
     
     
-    func addGradientLayer() -> CAGradientLayer {
+    private func addGradientLayer() -> CAGradientLayer {
         
         let gradientLayer = CAGradientLayer()
         
@@ -28,7 +27,7 @@ extension UIView {
         return gradientLayer
     }
     
-    func addAnimation() -> CABasicAnimation {
+    private func addAnimation() -> CABasicAnimation {
         
         let animation = CABasicAnimation(keyPath: "locations")
         animation.fromValue = [-1.0, -0.5, 0.0]
@@ -38,6 +37,10 @@ extension UIView {
         return animation
     }
     
+    
+    /// Custom shimmer animation for `UIView`
+    /// 
+    /// Check [ShimmerView](https://github.com/VasudhaJha/ShimmerAnimationComplete/blob/master/ShimmerAnimationComplete/ShimmerView.swift)
     func startShimmerAnimation() {
         
         let gradientLayer = addGradientLayer()

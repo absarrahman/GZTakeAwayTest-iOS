@@ -26,6 +26,7 @@ class ContactDetailsCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: true)
     }
     
+    /// Responsible for poping view controller from the navigation stack
     func dismiss() {
         let vc = navigationController.popViewController(animated: true)
         guard let vc = vc else {
@@ -35,6 +36,7 @@ class ContactDetailsCoordinator: Coordinator {
         logPrint("Popping \(String(describing: vc))")
     }
     
+    /// Opens communication app based on the button tag
     func openUrlBased(on tag: Int) {
         
         var url: URL? = nil
@@ -72,6 +74,8 @@ class ContactDetailsCoordinator: Coordinator {
         }
     }
     
+    /// Alert dialog to show user when the app fails to launch communication apps
+    /// based on url
     private func showFailedLaunchAlert() {
         let alertController = UIAlertController(title: "Something went wrong", message: "Failed to launch the app.", preferredStyle: .alert)
         
